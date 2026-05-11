@@ -23,7 +23,7 @@
 <main>
   <div class="page-header">
     <h1 class="page-title">Projects</h1>
-    <p class="page-subtitle">Side projects at the edges of data science, finance, and sport.</p>
+    <p class="page-subtitle">Side projects at the edges of data science, optimization, and sport.</p>
   </div>
 
   <div class="section-label">Selected Work</div>
@@ -31,48 +31,45 @@
 
     <div class="project-card">
       <div class="project-header">
-        <h2 class="project-title">Assortment Optimization under Substitution</h2>
-        <span class="project-year">2025</span>
+        <h2 class="project-title">Greedy Algorithms for Assortment Optimization</h2>
+        <span class="project-year">Spring 2023</span>
       </div>
       <p class="project-desc">
-        Built a simulation and optimization pipeline for a retail assortment problem
-        where customers substitute across products when their first choice is unavailable.
-        Applied mixed-integer programming and choice-model estimation (MNL, nested logit)
-        to benchmark against heuristic shelf-stocking policies. Showed meaningful revenue
-        uplift versus naive approaches on synthetic and semi-real data.
+        Independent research at Cornell Tech investigating assortment optimization in e-retail
+        under the Multinomial Logit (MNL) and Mixtures of MNL choice models. The work
+        evaluates the practical performance of greedy algorithms — prized for their speed and
+        simplicity — against exact integer-programming solutions, across a range of price and
+        attraction-value distributions. A probabilistic analysis complements the computational
+        study to characterize when greedy approaches recover near-optimal revenue.
       </p>
       <div class="tech-pills">
         <span class="pill">Python</span>
-        <span class="pill">Gurobi</span>
-        <span class="pill">Discrete Choice Models</span>
-        <span class="pill">Simulation</span>
+        <span class="pill">MNL &amp; Mixtures of MNL</span>
+        <span class="pill">Integer Programming</span>
+        <span class="pill">Probabilistic Analysis</span>
       </div>
     </div>
 
     <div class="project-card">
       <div class="project-header">
-        <h2 class="project-title">Tennis Serve Analytics</h2>
-        <span class="project-year">2024</span>
+        <h2 class="project-title">A Machine Learning Model to Predict Tennis Matches</h2>
+        <span class="project-year">2022 – present</span>
       </div>
       <p class="project-desc">
-        A personal exploration of ATP serve data — combining publicly available
-        match statistics with shot-quality metrics to model first-serve effectiveness
-        as a function of court surface, opponent rank, and match state.
-        Uses gradient-boosted trees and SHAP values to interpret which factors
-        drive aces versus forced errors on different surfaces.
+        A long-running personal project predicting ATP and WTA match outcomes. At its core is
+        a custom variation of the Glicko-2 rating system, fed into an LSTM that captures
+        player form, fatigue, head-to-head history, and performance against opponents with
+        similar playstyle. Built on a curated pipeline ingesting 400k+ historical matches,
+        with extensive feature elimination, hyperparameter tuning, and uncertainty
+        quantification. Achieves ~70% prediction accuracy and an average 7% ROI per match on
+        the held-out test set.
       </p>
       <div class="tech-pills">
         <span class="pill">Python</span>
-        <span class="pill">XGBoost</span>
-        <span class="pill">SHAP</span>
-        <span class="pill">pandas</span>
+        <span class="pill">PyTorch (LSTM)</span>
+        <span class="pill">MySQL</span>
+        <span class="pill">Glicko-2</span>
       </div>
-      <a href="https://github.com/FeTiberga" target="_blank" rel="noopener" class="project-link">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
-        </svg>
-        GitHub
-      </a>
     </div>
 
   </div>
